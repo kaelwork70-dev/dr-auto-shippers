@@ -1,4 +1,62 @@
 :root{
+ 
+  .header{
+  position: sticky; top:0; z-index:50;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  border-top: 4px solid var(--blue);
+}
+
+  .section h2{
+  margin: 0 0 10px;
+  font-size: 30px;
+  letter-spacing:-.2px;
+  color: var(--blue);
+}
+.section h2::after{
+  content:"";
+  display:block;
+  width: 64px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--red);
+  margin-top: 10px;
+}
+
+  .btn.primary{
+  background: var(--blue);
+  border-color: transparent;
+  color:#fff;
+  box-shadow: 0 10px 24px rgba(11,61,145,.22);
+}
+.btn.primary:hover{ box-shadow: 0 14px 30px rgba(11,61,145,.26); }
+
+.hero-card .btn.primary{
+  background: var(--red);
+  box-shadow: 0 10px 24px rgba(215,38,56,.18);
+}
+.hero-card .btn.primary:hover{
+  box-shadow: 0 14px 30px rgba(215,38,56,.22);
+}
+
+.card{
+  background: #fff;
+  border: 1px solid rgba(11,61,145,.18);
+  border-top: 4px solid rgba(11,61,145,.65);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 10px 26px rgba(10,27,58,.06);
+}
+
+  .hero-card{
+  background: #fff;
+  border: 1px solid rgba(10,27,58,.14);
+  border-left: 5px solid var(--red);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
   /* Brand: Red / White / Blue */
   --bg:#ffffff;
   --panel:#ffffff;
