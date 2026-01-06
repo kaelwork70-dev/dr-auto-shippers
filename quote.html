@@ -1,1 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Quote | D&R Auto Shippers</title>
+  <meta name="description" content="Request a free auto shipping quote from D&R Auto Shippers. Fast response nationwide." />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">D&R</div>
+        <span class="brand-name">D&R Auto Shippers</span>
+        <span class="brand-sub">Car Transport Broker</span>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="quote.html">Get a Quote</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Quote Form -->
+  <section class="section">
+    <div class="container form-page">
+      <h1>Request a Free Quote</h1>
+      <p class="muted">Fill out the form below and we’ll get back to you quickly.</p>
+
+      <form class="form" action="#" method="post">
+
+        <div class="row">
+          <label>
+            Full Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Phone or Email
+            <input type="text" name="contact" required />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Pick-up ZIP
+            <input type="text" name="pickup_zip" required />
+          </label>
+
+          <label>
+            Drop-off ZIP
+            <input type="text" name="dropoff_zip" required />
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Vehicle
+            <input type="text" name="vehicle" placeholder="Year / Make / Model" />
+          </label>
+
+          <label>
+            Transport Type
+            <select name="type">
+              <option>Open Transport</option>
+              <option>Enclosed Transport</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Notes (optional)
+          <textarea name="notes" rows="3"></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">
+          Submit Quote Request
+        </button>
+
+        <p class="tiny muted">
+          We respond quickly. No obligation.
+        </p>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2024 D&R Auto Shippers</span>
+      <span class="muted">Framingham, MA • Nationwide Shipping</span>
+    </div>
+  </footer>
+
+</body>
+</html>
